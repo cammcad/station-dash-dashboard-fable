@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <!--VSCode does not allow re-ordering of files (manually), so I have to use silly names-->
+  <ItemGroup>
+    <Compile Include="ACoreDefs.fs" />
+    <Compile Include="../data/ADab.fs" />
+    <Compile Include="ADashboard.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Fable.Browser.Dom" Version="2.2.0" />
+    <PackageReference Include="Fable.Core" Version="3.2.3" />
+  </ItemGroup>
+</Project>
